@@ -68,11 +68,10 @@ body {
 .copy {
   position: absolute;
   margin-top: 70px;
-  left: 41%;
-  right: 41%;
-  width: 20px;
+  left: 45%;
+  right: 45%;
+  width: 70px;
   height: 20px;
-  min-width: 145px;
   font-size: 15px;
   color: lightgray;
   background-color: rgb(32, 32, 32);
