@@ -1,0 +1,28 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Generator wypowiedzeń Korwina</title>
+    <link rel="icon" href="img/korwin-icon.png" />
+    <!--Ikona karty (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
+    <link href="css/tts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="img/korwin.png" class="responywnykorwin" />
+    <!--Zdjęcie w tle (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
+    <div class="mfunbg"><br /></div>
+    <div class="mainfun">
+      <h1 class="titel">Generator wypowiedzeń Korwina</h1>
+      <textarea
+        class="reltext"
+        cols="30"
+        rows="10"
+        placeholder="Tu pojawi się tekst."
+        disabled
+      ></textarea>
+      <button id="start" class="start" onclick="przemowa()">
+        Wygeneruj zdanie
+      </button>
+    </div>
+  </body>
+  <script src="tts.js"></script>
+</html>
