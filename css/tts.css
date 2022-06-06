@@ -83,7 +83,9 @@ body {
     left: 0px;
     right: 0px;
     width: 100%;
+    min-width: 525px;
     height: 100%;
+    min-height: 550px;
     border-radius: 0px;
   }
   .titel {
@@ -100,9 +102,7 @@ body {
     width: 95%;
     color: lightgray;
     background-color: rgb(18, 18, 18);
-
     border: none;
-
     resize: none;
     border-radius: 10px;
     font-size: 35px;
@@ -124,5 +124,18 @@ body {
   }
 }
 /*CSS dla urządzeń z wysokim DPI (lub/i nieprawidłową skalą)*/
-@media only screen and (m) {
+@media only screen and (min-width: 3360px) {
+  .mfunbg {
+    height: 575px;
+  }
+  .titel {
+    font-size: 50px;
+  }
+  .reltext {
+    font-size: 35px;
+  }
+  .start {
+    height: 50px;
+    font-size: 30px;
+  }
 }
