@@ -30,3 +30,12 @@ async function copy () {
   await navigator.clipboard.writeText(last);
   alert(`Skopiowano przemówienie : \n${last}`);
 }
+
+//opcje
+document.querySelector("#volmue").addEventListener('onChange', () => {
+  document.getElementById('volmueVal').innerText = document.getElementById('volmue').value;
+})
+
+document.querySelector('#pitch').addEventListener('onChange', () => {
+  document.getElementById('pitchVal').innerText = document.getElementById('pitch').value
+})

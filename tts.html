@@ -22,6 +22,14 @@
       Wygeneruj zdanie
     </button>
     <button onclick="copy()" class="copy">Skopiuj</button>
+    <div class="options" style="bottom: 0px; right: 0px;">
+      <label for="isVoice">Mów po wygenerowaniu</label>
+      <input type="checkbox" id="isVoice" name="isVoice">
+      <label for="volmue">Głośność : <p id="volmueVal"></p></label>
+      <input type="range" id="volmue" name="volmue" min="0" max="10" value="5">
+      <label for="pitch">Pitch : <p id="pitchVal"></p></label>
+      <input type="range" id="pitch" name="pitch" min="0" max="2" value="1"> 
+    </div>
   </div>
 </body>
 <script src="data.js"></script>
