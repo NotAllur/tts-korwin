@@ -23,7 +23,7 @@ let data = {
       "Prosze mnie dobrze zrozumieć:",
       "Ja chciałem państwu przypomnieć, że",
       "Niech państwo nie mają złudzeń:",
-      "Powiedzmy to wyraźnie:"
+      "Powiedzmy to wyraźnie:",
     ],
     "d": [
       //Cel obrażania
@@ -50,7 +50,9 @@ let data = {
       "ci wszyscy - tfu! - demokranci",
       "agenci bezpieki",
       "feminazistki",
-      "czterech milionów czarnych"
+      "feministki",
+      "czterech milionów czarnych",
+      "ludzie Epoki Telewizyjnej",
     ],
     "t": [
       //co myśli o tej grupie
@@ -73,7 +75,7 @@ let data = {
       "całkowicie bezczelnie",
       "o poglądach na lewo od komunizmu",
       "celowo i świadomie",
-      "z premedytacją"
+      "z premedytacją",
     ],
     "c": [
       //co robią
@@ -100,7 +102,7 @@ let data = {
       "nie dopuszczają prawicy do władzy",
       "uczą dzieci homoseksualizmu",
       "chcą dopuścić kobiety do władzy",
-      "chcą dać kobietom prawa"
+      "chcą dać kobietom prawa",
     ],
     "i": [
       //dlaczego to robią
@@ -125,7 +127,9 @@ let data = {
       "bo głupich jest więcej niż mądrych",
       "bo chcą stworzyć raj na ziemii",
       "bo chcą zniszczyć cywilizacje białego człowieka",
-      "bo takie jest prawo czarnego rynku"
+      "bo takie jest prawo czarnego rynku",
+      "bo nie widzą świata takim jaki jest,tylko takim jakim im go pokażą",
+      "bo na tym polega liberalizm.",
     ],
     "s": [
       //zakończenie
@@ -151,6 +155,6 @@ let data = {
       "co lat temu sto nikomu nie przyszłoby do głowy.",
       "Lud jest głupi jak but z lewej stopy.",
       "jest dużo bardziej zasadne niż edukacja seksualna młodzieży.",
-      "a powinno być to z całą surowością karane."
+      "a powinno być to z całą surowością karane.",
     ]
 }

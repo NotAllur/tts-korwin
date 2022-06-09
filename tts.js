@@ -1,6 +1,6 @@
 let speech = new SpeechSynthesisUtterance();
 speech.lang = "pl";
-let last
+let last;
 
 // funkcja generująca wypowiedź
 function przemowa() {
@@ -20,22 +20,26 @@ function przemowa() {
 
   document.querySelector("textarea").value = `„${ttext}”`;
   speech.text = ttext;
-  last = ttext
+  last = ttext;
 
   window.speechSynthesis.speak(speech);
 }
 
 //skopiowanie tekstu
-async function copy () {
+async function copy() {
   await navigator.clipboard.writeText(last);
   alert(`Skopiowano przemówienie : \n${last}`);
 }
 
 //opcje
-document.querySelector("#volmue").addEventListener('onChange', () => {
-  document.getElementById('volmueVal').innerText = document.getElementById('volmue').value;
-})
+document.querySelector("#volmue").addEventListener("onChange", () => {
+  document.getElementById("volmueVal").innerText =
+    document.getElementById("volmue").value;
+  speech.volume = document.getElementById("volmue").value;
+});
 
-document.querySelector('#pitch').addEventListener('onChange', () => {
-  document.getElementById('pitchVal').innerText = document.getElementById('pitch').value
-})
+document.querySelector("#pitch").addEventListener("onChange", () => {
+  document.getElementById("pitchVal").innerText =
+    document.getElementById("pitch").value;
+  speech.pitch = document.getElementById("pitch").value;
+});

@@ -51,6 +51,11 @@ body {
   border: none;
   border-radius: 10px;
 }
+.options {
+  position: absolute;
+  width: 200px;
+  background-color: rgba(18, 18, 18, 0.98);
+}
 .start {
   position: absolute;
   margin-top: 200px;
