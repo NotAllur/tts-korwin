@@ -1,4 +1,5 @@
-// Teksty
+// Źródło: https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html
+//teksty
 let data = {
     "p": [
       // Zwrócenie uwagi odbiorcy do siebie

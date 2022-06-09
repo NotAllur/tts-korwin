@@ -2,6 +2,15 @@ let speech = new SpeechSynthesisUtterance();
 speech.lang = "pl";
 let last;
 
+//  funkcja ładująca zmienne
+function load() {
+  document.getElementById("pitchVal").value = window.localStorage.getItem("pitchValue") || 1;
+  document.getElementById("rate").value = window.localStorage.getItem("pitchValue") || 1;
+  document.getElementById("rateVal").value = window.localStorage.getItem("rateValue") || 1;
+  document.getElementById("pitch").value = window.localStorage.getItem("rateValue") || 1;
+  document.getElementById("isVoice").checked = window.localStorage.getItem("isVoice") || false;
+}
+
 // funkcja generująca wypowiedź
 function przemowa() {
   let korwin = data;
@@ -15,14 +24,11 @@ function przemowa() {
   text.push(korwin.s[Math.floor(Math.random() * korwin.s.length)]);
   let ttext = text.join(" ");
 
-  console.log(text);
-  console.log(ttext);
-
   document.querySelector("textarea").value = `„${ttext}”`;
   speech.text = ttext;
   last = ttext;
 
-  window.speechSynthesis.speak(speech);
+  if(document.getElementById('isVoice').checked) window.speechSynthesis.speak(speech);
 }
 
 //skopiowanie tekstu
@@ -32,14 +38,30 @@ async function copy() {
 }
 
 //opcje
-document.querySelector("#volmue").addEventListener("onChange", () => {
-  document.getElementById("volmueVal").innerText =
-    document.getElementById("volmue").value;
-  speech.volume = document.getElementById("volmue").value;
-});
+function rateConRan(){
+  document.getElementById("rateVal").value = document.getElementById("rate").value;
+  speech.rate = document.getElementById("rate").value;
+  window.localStorage.setItem("rateValue", document.getElementById("rate").value)
+}
 
-document.querySelector("#pitch").addEventListener("onChange", () => {
-  document.getElementById("pitchVal").innerText =
-    document.getElementById("pitch").value;
+function rateConInp(){
+  document.getElementById('rate').value = document.getElementById('rateVal')
   speech.pitch = document.getElementById("pitch").value;
-});
+  window.localStorage.setItem("pitchValue", document.getElementById('pitch').value)
+}
+
+function pitchConRan(){
+  document.getElementById("pitchVal").value = document.getElementById("pitch").value;
+  speech.pitch = document.getElementById("pitch").value;
+  window.localStorage.setItem("pitchValue", document.getElementById('pitch').value)
+}
+
+function pitchConInp(){
+  document.getElementById("pitch").value = document.getElementById("pitchVal").value
+  speech.pitch = document.getElementById("pitch").value;
+  window.localStorage.setItem("pitchValue", document.getElementById('pitch').value)
+}
+
+function isVoiceCon() {
+  window.localStorage.setItem("isVoice", document.getElementById('isVoice').checked)
+}

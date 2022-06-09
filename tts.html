@@ -1,55 +1,45 @@
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Generator wypowiedzeń Korwina</title>
-    <link rel="icon" href="img/korwin-icon.png" />
-    <!--Ikona karty (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
-    <link href="css/tts.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <img src="img/korwin.png" class="responywnykorwin" />
-    <!--Zdjęcie w tle (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
-    <div class="mfunbg">
-      <br />
-    </div>
-    <div class="mainfun">
-      <h1 class="titel">Generator wypowiedzeń Korwina</h1>
-      <textarea
-        onclick="copy()"
-        class="reltext"
-        cols="30"
-        rows="10"
-        placeholder="Tu pojawi się tekst."
-        disabled
-      ></textarea>
-      <button id="start" class="start" onclick="przemowa()">
-        Wygeneruj zdanie
-      </button>
-      <button onclick="copy()" class="copy">Skopiuj</button>
-    </div>
-    <div class="options" style="bottom: 0px; right: 0px">
-      <label for="isVoice">Mów po wygenerowaniu</label>
-      <input type="checkbox" id="isVoice" name="isVoice" />
-      <label for="volmue"
-        >Głośność :
-        <p id="volmueVal"></p
-      ></label>
-      <input
-        type="range"
-        id="volmue"
-        name="volmue"
-        min="0"
-        max="10"
-        value="5"
-      />
-      <label for="pitch"
-        >Pitch :
-        <p id="pitchVal"></p
-      ></label>
-      <input type="range" id="pitch" name="pitch" min="0" max="2" value="1" />
-    </div>
-  </body>
-  <script src="data.js"></script>
-  <script src="tts.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>Generator wypowiedzeń Korwina</title>
+  <link rel="icon" href="img/korwin-icon.png" />
+  <!--Ikona karty (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
+  <link href="css/tts.css" rel="stylesheet" />
+</head>
+
+<body onload="load()">
+  <img src="img/korwin.png" class="responywnykorwin" />
+  <!--Zdjęcie w tle (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
+  <div class="mfunbg">
+    <br />
+  </div>
+  <div class="mainfun">
+    <h1 class="titel">Generator wypowiedzeń Korwina</h1>
+    <textarea onclick="copy()" class="reltext" cols="30" rows="10" placeholder="Tu pojawi się tekst."
+      disabled></textarea>
+    <button id="start" class="start" onclick="przemowa()">
+      Wygeneruj zdanie
+    </button>
+    <button onclick="copy()" class="copy">Skopiuj</button>
+  </div>
+  <div class="options" style="bottom: 0px; right: 0px">
+    <label for="isVoice" class="textC">Mów po wygenerowaniu</label>
+    <input type="checkbox" id="isVoice" name="isVoice" onchange="isVoiceCon()"/>
+    <br>
+    <label for="rate" class="textC">Prędkość przemowy :
+      <input type="number" min="0.1" max="10" id="rateVal" class="textC" onchange="rateConInp()"> <br>
+    </label>
+    <input type="range" id="rate" name="rate" min="0.1" max="10" step="0.1" onchange="rateConRan()" />
+      
+    <br>
+    <label for="pitch" class="textC">Pitch : <br>
+      <input type="number" min="0" max="2" step="0.1" id="pitchVal" class="textC" onchange="pitchConInp()"> <br>
+    </label>
+    <input type="range" id="pitch" name="pitch" min="0" max="2" onchange="pitchConRan()" />
+  </div>
+</body>
+<script src="data.js"></script>
+<script src="tts.js"></script>
+
 </html>
