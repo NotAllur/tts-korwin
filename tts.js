@@ -4,11 +4,11 @@ let last;
 
 //  funkcja ładująca zmienne
 function load() {
-  document.getElementById("pitchVal").value = window.localStorage.getItem("pitchValue") || 1;
-  document.getElementById("rate").value = window.localStorage.getItem("pitchValue") || 1;
-  document.getElementById("rateVal").value = window.localStorage.getItem("rateValue") || 1;
-  document.getElementById("pitch").value = window.localStorage.getItem("rateValue") || 1;
-  document.getElementById("isVoice").checked = window.localStorage.getItem("isVoice") || false;
+  document.getElementById("pitchVal").value = window.localStorage.getItem("pitchValue");
+  document.getElementById("rate").value = window.localStorage.getItem("pitchValue");
+  document.getElementById("rateVal").value = window.localStorage.getItem("rateValue");
+  document.getElementById("rate").value = window.localStorage.getItem("rateValue");
+  document.getElementById("isVoice").checked = window.localStorage.getItem("isVoice");
 }
 
 // funkcja generująca wypowiedź
@@ -41,27 +41,27 @@ async function copy() {
 function rateConRan(){
   document.getElementById("rateVal").value = document.getElementById("rate").value;
   speech.rate = document.getElementById("rate").value;
-  window.localStorage.setItem("rateValue", document.getElementById("rate").value)
+  window.localStorage.setItem("rateValue", document.getElementById("rate").value);
 }
 
 function rateConInp(){
-  document.getElementById('rate').value = document.getElementById('rateVal')
-  speech.pitch = document.getElementById("pitch").value;
-  window.localStorage.setItem("pitchValue", document.getElementById('pitch').value)
+  document.getElementById('rate').value = document.getElementById('rateVal');
+  speech.rate = document.getElementById("rate").value;
+  window.localStorage.setItem("rateValue", document.getElementById('rateVal').value);
 }
 
 function pitchConRan(){
   document.getElementById("pitchVal").value = document.getElementById("pitch").value;
   speech.pitch = document.getElementById("pitch").value;
-  window.localStorage.setItem("pitchValue", document.getElementById('pitch').value)
+  window.localStorage.setItem("pitchValue", document.getElementById('pitch').value);
 }
 
 function pitchConInp(){
-  document.getElementById("pitch").value = document.getElementById("pitchVal").value
+  document.getElementById("pitch").value = document.getElementById("pitchVal").value;
   speech.pitch = document.getElementById("pitch").value;
-  window.localStorage.setItem("pitchValue", document.getElementById('pitch').value)
+  window.localStorage.setItem("pitchValue", document.getElementById('pitchVal').value);
 }
 
 function isVoiceCon() {
-  window.localStorage.setItem("isVoice", document.getElementById('isVoice').checked)
+  window.localStorage.setItem("isVoice", document.getElementById('isVoice').checked);
 }

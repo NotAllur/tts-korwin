@@ -1,8 +1,16 @@
+<!DOCTYPE html>
 <html lang="pl">
 
 <head>
+  <!--Meta-->
   <meta charset="UTF-8" />
+  <meta name="description" content="Generator Tekstów korwina z możliwością Text To Speech">
+  <meta name="author" content="Allur & Deg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="generator wypowiedzi korwina, korwin, korwin tts">
+
   <title>Generator wypowiedzeń Korwina</title>
+
   <link rel="icon" href="img/korwin-icon.png" />
   <!--Ikona karty (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
   <link href="css/tts.css" rel="stylesheet" />
@@ -11,9 +19,11 @@
 <body onload="load()">
   <img src="img/korwin.png" class="responywnykorwin" />
   <!--Zdjęcie w tle (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
+  
   <div class="mfunbg">
     <br />
   </div>
+
   <div class="mainfun">
     <h1 class="titel">Generator wypowiedzeń Korwina</h1>
     <textarea onclick="copy()" class="reltext" cols="30" rows="10" placeholder="Tu pojawi się tekst."
@@ -23,23 +33,28 @@
     </button>
     <button onclick="copy()" class="copy">Skopiuj</button>
   </div>
+
+  <p class="inspiration">Strona zainspirowana <a href="https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html">tym postem</a> || Strona jest Open Source, i jest dostępna na <a href="https://github.com/NotAllur/tts-korwin">Git Hub</a></p>
+
   <div class="options" style="bottom: 0px; right: 0px">
     <label for="isVoice" class="textC">Mów po wygenerowaniu</label>
     <input type="checkbox" id="isVoice" name="isVoice" onchange="isVoiceCon()"/>
     <br>
     <label for="rate" class="textC">Prędkość przemowy :
-      <input type="number" min="0.1" max="10" id="rateVal" class="textC" onchange="rateConInp()"> <br>
+      <input type="number" min="0.1" max="10" step="0.1" id="rateVal" class="textC" onchange="rateConInp()"> <br>
     </label>
-    <input type="range" id="rate" name="rate" min="0.1" max="10" step="0.1" onchange="rateConRan()" />
+    <input type="range" id="rate" name="rate" min="1" max="10" step="0.1" onchange="rateConRan()" />
       
     <br>
     <label for="pitch" class="textC">Pitch : <br>
-      <input type="number" min="0" max="2" step="0.1" id="pitchVal" class="textC" onchange="pitchConInp()"> <br>
+      <input type="number" min="0" max="2" id="pitchVal" value="1" class="textC" onchange="pitchConInp()"> <br>
     </label>
-    <input type="range" id="pitch" name="pitch" min="0" max="2" onchange="pitchConRan()" />
-  </div>
-</body>
-<script src="data.js"></script>
-<script src="tts.js"></script>
+    <input type="range" id="pitch" name="pitch" value="1" min="0" max="2" onchange="pitchConRan()" />
 
+  </div>
+  <!--JavaScript-->
+  <script src="data.js"></script>
+  <script src="tts.js"></script>
+</body>
+  
 </html>
