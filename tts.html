@@ -45,16 +45,6 @@
       <button onclick="copy()" class="copy">Skopiuj</button>
     </div>
 
-    <p class="inspiration">
-      Strona zainspirowana
-      <a
-        href="https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html"
-        >tym postem</a
-      >
-      || Strona jest Open Source, i jest dostępna na
-      <a href="https://github.com/NotAllur/tts-korwin">Git Hub</a>
-    </p>
-
     <div class="options" style="bottom: 0px; right: 0px">
       <label for="isVoice" class="textC">Mów po wygenerowaniu</label>
       <input
@@ -110,8 +100,8 @@
         max="2"
         onchange="pitchConRan()"
       />
-      <button class="ibut" id="inv">?</button>
-      <div class="info">
+      <button class="ibut" id="inv" onclick="showInfo()">?</button>
+      <div class="info invisible" id="infoInv">
         <p class="inspiration">
           Strona zainspirowana
           <a

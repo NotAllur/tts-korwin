@@ -256,3 +256,7 @@ input[type="range"]:focus::-ms-fill-upper {
   bottom: 20px;
   left: 20px;
 }
+
+.invisible {
+  visibility: hidden;
+}

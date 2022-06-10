@@ -65,3 +65,8 @@ function pitchConInp(){
 function isVoiceCon() {
   window.localStorage.setItem("isVoice", document.getElementById('isVoice').checked);
 }
+
+function showInfo() {
+  let elem = document.getElementById('infoInv');
+  elem.classList.toggle('invisible')
+}
