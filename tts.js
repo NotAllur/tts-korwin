@@ -4,11 +4,16 @@ let last;
 
 //  funkcja ładująca zmienne
 function load() {
+  let korwin = data;
+
   document.getElementById("pitchVal").value = window.localStorage.getItem("pitchValue");
   document.getElementById("rate").value = window.localStorage.getItem("pitchValue");
   document.getElementById("rateVal").value = window.localStorage.getItem("rateValue");
   document.getElementById("rate").value = window.localStorage.getItem("rateValue");
   document.getElementById("isVoice").checked = window.localStorage.getItem("isVoice");
+
+  document.getElementById("liczTekstow").innerHTML = `Liczba tekstów : <b>${(korwin.p.length+1)+(korwin.d.length+1)+(korwin.t.length+1)+(korwin.c.length+1)+(korwin.i.length+1)+(korwin.s.length+1)}</b>`;
+  console.log(`Łączna liczba możliwości: ${(korwin.p.length+1)*(korwin.d.length+1)*(korwin.t.length+1)*(korwin.c.length+1)*(korwin.i.length+1)*(korwin.s.length+1)}`)
 }
 
 // funkcja generująca wypowiedź

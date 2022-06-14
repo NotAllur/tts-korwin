@@ -1,4 +1,5 @@
 // Źródło: https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html
+//„”
 //teksty
 let data = {
     "p": [
@@ -25,6 +26,10 @@ let data = {
       "Ja chciałem państwu przypomnieć, że",
       "Niech państwo nie mają złudzeń:",
       "Powiedzmy to wyraźnie:",
+      "musimy jasno i stanowczo powiedzieć naszym kobietom, starcom i dzieciom:",
+      "Dla wyjaśnienia moim wyborcom:",
+      "Z największą przyjemnością stanę przed sądem, dlatego, że ktoś musi powiedzieć prawdę:",
+      "Powiedzmy sobie jasno:",
     ],
     "d": [
       //Cel obrażania
@@ -54,6 +59,9 @@ let data = {
       "feministki",
       "czterech milionów czarnych",
       "ludzie Epoki Telewizyjnej",
+      "anarchiści",
+      "katolicy",
+      "banda komuchów",
     ],
     "t": [
       //co myśli o tej grupie
@@ -77,6 +85,12 @@ let data = {
       "o poglądach na lewo od komunizmu",
       "celowo i świadomie",
       "z premedytacją",
+      "którym odebrałbym prawo wyborcze,",
+      "czyli banda chamów importowanych z zagranicy,",
+      "którzy powinni działać zgodnie z elementarzem: „Gdy chcesz zniszczyć organizację wybieraj niezadowolonych”, lecz by to osiągnąć to",
+      "na których niemarnowałbym ostrej amunicji",
+      "taka bandycka instytucja",
+      "którzy domagaliby sie zasiłków socjalnych od państwa",
     ],
     "c": [
       //co robią
@@ -104,6 +118,10 @@ let data = {
       "uczą dzieci homoseksualizmu",
       "chcą dopuścić kobiety do władzy",
       "chcą dać kobietom prawa",
+      "odbierają obywatelom prawo do obrony",
+      "walczą o prawo do zawierania „homo-małżeństw”",
+      "wprowadzają ustawy przez które miałoby się zabijać więcej nienarodzonych dzieci,",
+      "chcą zniszczyć Porządek Cywilny",
     ],
     "i": [
       //dlaczego to robią
@@ -131,6 +149,10 @@ let data = {
       "bo takie jest prawo czarnego rynku",
       "bo nie widzą świata takim jaki jest,tylko takim jakim im go pokażą",
       "bo na tym polega liberalizm.",
+      "Żeby nas potem powybierać jak ryby z saka",
+      "aby obniżyć poziom edukacji",
+      "bo chcą Prawa Człowieka na ich korzyść",
+      "ponieważ natężenie mikkofobii na linijkę przekroczyło normy europejskie",
     ],
     "s": [
       //zakończenie
@@ -157,5 +179,12 @@ let data = {
       "Lud jest głupi jak but z lewej stopy.",
       "jest dużo bardziej zasadne niż edukacja seksualna młodzieży.",
       "a powinno być to z całą surowością karane.",
+      "przed czym zresztą ostrzegaliśmy już w 1980 r.",
+      "ale pamiętajmy, podobno każdy za młodu powinien być socjalistą, a potem mądrzeje.",
+      "Trzeba być idiotą, żeby chcieć w takim ustroju żyć.",
+      "ma to tyle-ż sensu, co kojarzenie chrześcijaństwa z wojnami krzyżowymi.",
+      "jest to pewna ideologia, po stokroć groźniejsza niż całe Imperium Zła.",
+      "a jutro posuną się o krok dalej.",
+      "ale to oznacza, że Murzyni niedługo podbiją świat. I wyrżną nas.",
     ]
 }
