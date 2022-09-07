@@ -30,6 +30,10 @@ let data = {
       "Dla wyjaśnienia moim wyborcom:",
       "Z największą przyjemnością stanę przed sądem, dlatego, że ktoś musi powiedzieć prawdę:",
       "Powiedzmy sobie jasno:",
+      "Według opinii własnych zwolenników",
+      "Pisząc wprost:",
+      "Mówiąc wprost",
+      "Tak - konstytucja ZSRR wyraźnie mówiła, że"
     ],
     "d": [
       //Cel obrażania
@@ -62,6 +66,12 @@ let data = {
       "anarchiści",
       "katolicy",
       "banda komuchów",
+      "ci z PO",
+      "republiki związkowe",
+      "ambasadarowie obcych miast",
+      "Ukraińcy",
+      "Anglo-sasowie",
+      "kobiety"
     ],
     "t": [
       //co myśli o tej grupie
@@ -91,6 +101,7 @@ let data = {
       "na których niemarnowałbym ostrej amunicji",
       "taka bandycka instytucja",
       "którzy domagaliby sie zasiłków socjalnych od państwa",
+      "ogłupieni na dzisiejszych \"renomowanych\" uniwersytetach"
     ],
     "c": [
       //co robią
@@ -122,6 +133,7 @@ let data = {
       "walczą o prawo do zawierania „homo-małżeństw”",
       "wprowadzają ustawy przez które miałoby się zabijać więcej nienarodzonych dzieci,",
       "chcą zniszczyć Porządek Cywilny",
+      "kradli, ale i pozwalają kraść"
     ],
     "i": [
       //dlaczego to robią
@@ -153,6 +165,7 @@ let data = {
       "aby obniżyć poziom edukacji",
       "bo chcą Prawa Człowieka na ich korzyść",
       "ponieważ natężenie mikkofobii na linijkę przekroczyło normy europejskie",
+      "bo to są ciemniacy z dyplomami"
     ],
     "s": [
       //zakończenie
@@ -177,7 +190,7 @@ let data = {
       "- prosze zobaczyć, co sie dzieje na Zachodzie, jeśli państwo nie wierzą.",
       "co lat temu sto nikomu nie przyszłoby do głowy.",
       "Lud jest głupi jak but z lewej stopy.",
-      "jest dużo bardziej zasadne niż edukacja seksualna młodzieży.",
+      "jest to dużo bardziej zasadne niż edukacja seksualna młodzieży.",
       "a powinno być to z całą surowością karane.",
       "przed czym zresztą ostrzegaliśmy już w 1980 r.",
       "ale pamiętajmy, podobno każdy za młodu powinien być socjalistą, a potem mądrzeje.",
@@ -186,5 +199,14 @@ let data = {
       "jest to pewna ideologia, po stokroć groźniejsza niż całe Imperium Zła.",
       "a jutro posuną się o krok dalej.",
       "ale to oznacza, że Murzyni niedługo podbiją świat. I wyrżną nas.",
+      "to za trudne dla IDIOTÓW z Brukseli.",
+      "- Włodzimierz Putin ściągnie z tego podatek i kupi jakąś rakietę do walenia w Ukraińców.",
+      "i właśnie dlatego Polacy to ciemniacy i ksenofobowie - ale za to ludzie szczęśliwi.",
+      "rozumiem, że Wołyń mają na myśli?",
+      "- Należy natychmiast zaorać tą reżimową tubę i sprywatyzować - natychmiast!",
+      "które przecież są jak powszechnie wiadomo, \"szkodliwe\".",
+      "- najwyższy czas na Kontrrewolucje!",
+      "to na pewno Putin. Albo CIA...",
+      "ale sanatorzy wyznawali Teorię dwóch wrogów."
     ]
 }
