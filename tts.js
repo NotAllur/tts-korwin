@@ -6,7 +6,13 @@ let last;
 function load() {
   let korwin = data;
 
-
+  /*
+  document.getElementById("pitchVal").value = window.localStorage.getItem("pitchValue");
+  document.getElementById("rate").value = window.localStorage.getItem("pitchValue");
+  document.getElementById("rateVal").value = window.localStorage.getItem("rateValue");
+  document.getElementById("rate").value = window.localStorage.getItem("rateValue");
+  document.getElementById("isVoice").checked = window.localStorage.getItem("isVoice");
+  */
 
   document.getElementById("liczTekstow").innerHTML = `Liczba tekstów : <b>${(korwin.p.length+1)+(korwin.d.length+1)+(korwin.t.length+1)+(korwin.c.length+1)+(korwin.i.length+1)+(korwin.s.length+1)}</b>`;
   console.log(`Łączna liczba możliwości: ${(korwin.p.length+1)*(korwin.d.length+1)*(korwin.t.length+1)*(korwin.c.length+1)*(korwin.i.length+1)*(korwin.s.length+1)}`)
@@ -32,10 +38,24 @@ function przemowa() {
   if(document.getElementById('isVoice').checked) window.speechSynthesis.speak(speech);
 }
 
+
 //skopiowanie tekstu
+let opacity = 0
 async function copy() {
   await navigator.clipboard.writeText(last);
-  alert(`Skopiowano przemówienie : \n${last}`);
+  let copyAlert = document.getElementById('copyAlert')
+  let increement = 0.250
+  let instanceIn = window.setInterval(function(){
+    copyAlert.style.opacity = opacity;
+    opacity = opacity + increement;
+    if(opacity > 1) window.clearInterval(instanceIn)
+  },50)
+  await sleep(4000)
+  let instanceOut = window.setInterval(function(){
+    copyAlert.style.opacity = opacity;
+    opacity = opacity - increement;
+    if(opacity < 0) window.clearInterval(instanceOut)
+  },50)
 }
 
 //opcje
@@ -70,4 +90,12 @@ function isVoiceCon() {
 function showInfo() {
   let elem = document.getElementById('infoInv');
   elem.classList.toggle('invisible')
+}
+
+let sleep = function(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+Array.prototype.random = function (){
+  return this[Math.floor((Math.random()*this.length))];
 }

@@ -33,7 +33,9 @@ let data = {
       "Według opinii własnych zwolenników",
       "Pisząc wprost:",
       "Mówiąc wprost",
-      "Tak - konstytucja ZSRR wyraźnie mówiła, że"
+      "Tak - konstytucja ZSRR wyraźnie mówiła, że",
+      "Jakiś nawiny rosjanin dziwi się, że",
+      "Jak to napisałem wiele razy (ale kto dziś czyta?) -"
     ],
     "d": [
       //Cel obrażania
@@ -71,7 +73,8 @@ let data = {
       "ambasadarowie obcych miast",
       "Ukraińcy",
       "Anglo-sasowie",
-      "kobiety"
+      "kobiety",
+      "ONZ"
     ],
     "t": [
       //co myśli o tej grupie
@@ -101,7 +104,13 @@ let data = {
       "na których niemarnowałbym ostrej amunicji",
       "taka bandycka instytucja",
       "którzy domagaliby sie zasiłków socjalnych od państwa",
-      "ogłupieni na dzisiejszych \"renomowanych\" uniwersytetach"
+      "ogłupieni na dzisiejszych \"renomowanych\" uniwersytetach",
+      "którzy są bardziej na lewo niż SLD",
+      "czyli taka partia liberalna",
+      "którzy mają tyle samo wspólnego z JE Włodzimierzem Putinem",
+      "za pieniądze arabskich emirów",
+      "wychwalani przez obecny reżym",
+      "zamiast rozwiązywania w zaciszu gabinetów prawdziwych problemów"
     ],
     "c": [
       //co robią
@@ -133,7 +142,9 @@ let data = {
       "walczą o prawo do zawierania „homo-małżeństw”",
       "wprowadzają ustawy przez które miałoby się zabijać więcej nienarodzonych dzieci,",
       "chcą zniszczyć Porządek Cywilny",
-      "kradli, ale i pozwalają kraść"
+      "kradli, ale i pozwalają kraść",
+      "dobierają sobie Biernych, Miernych ale Wiernych",
+      "znakomicie potrafią grać na uczuciach L**u robiąc mądre miny i umiejętnie wykorzystując zestawy słów, które nic nie znaczą"
     ],
     "i": [
       //dlaczego to robią
@@ -165,7 +176,10 @@ let data = {
       "aby obniżyć poziom edukacji",
       "bo chcą Prawa Człowieka na ich korzyść",
       "ponieważ natężenie mikkofobii na linijkę przekroczyło normy europejskie",
-      "bo to są ciemniacy z dyplomami"
+      "bo to są ciemniacy z dyplomami",
+      "bo oni twerdzą, za ś.tow.Józefem Goebbelsem, że parwdę można zrobić z każdego kłamstwa, byle je sto razy powtórzyć",
+      "bo obawiają się, że mądrzejsi od nich mogą ich obalić",
+
     ],
     "s": [
       //zakończenie
@@ -207,6 +221,20 @@ let data = {
       "które przecież są jak powszechnie wiadomo, \"szkodliwe\".",
       "- najwyższy czas na Kontrrewolucje!",
       "to na pewno Putin. Albo CIA...",
-      "ale sanatorzy wyznawali Teorię dwóch wrogów."
+      "ale sanatorzy wyznawali Teorię dwóch wrogów.",
+      "- to wszystko jest teatr stworzony przy okrągłym stole.",
+      "- przed czym chcecie ludzi zniechęcić, utrzymując dalej podatek dochodowy?",
+      "tę włąśnie praktykę zwalczam.",
+      "ale dzisiejsza dzicz nie uznaje zasad europejskich zasad moralnych.",
+      "ale po tej wypowiedzi nie powinni pokazywać sie publicznie ze wstydu.",
+      "#RządRżnieGłupa!",
+      "ciekawe co obstawiają bookmacherzy.",
+      "Bądźmy w końcu wolni! Precz z socjalizmem!"
     ]
 }
+
+/*
+Nie wiem gdzie te dodać : 
+- "wyrządza to Polsce szkody, bo polityk nie powinien kierować sie uczuciami, lecz racją stanu",
+- ""
+*/
