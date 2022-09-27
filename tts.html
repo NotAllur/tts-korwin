@@ -14,10 +14,6 @@
       content="generator wypowiedzi korwina, korwin, korwin tts"
     />
 
-    <div class="copyAlert" id="copyAlert" >
-      Skopiowano tekst
-    </div>
-
     <title>Generator wypowiedzeń Korwina</title>
 
     <link rel="icon" href="img/korwin-icon.png" />
@@ -25,15 +21,19 @@
     <link href="css/tts.css" rel="stylesheet" />
   </head>
 
+  <div class="copyAlert" id="copyAlert" >
+    Skopiowano tekst
+  </div>
+
   <body onload="load()">
-    <img src="img/korwin.png" class="responywnykorwin" />
+    <img src="img/korwin.png" class="responywnykorwin" id="responsywnykorwin" />
     <!--Zdjęcie w tle (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
 
     <div class="mfunbg">
       <br />
     </div>
 
-    <div class="mainfun">
+    <div class="mainfun" id="mainfun">
       <h1 class="titel">Generator wypowiedzeń Korwina</h1>
       <textarea
         onclick="copy()"
@@ -49,75 +49,26 @@
       <button onclick="copy()" class="copy">Skopiuj</button>
     </div>
 
-    <div class="options" style="bottom: 0px; right: 0px">
-      <label for="isVoice" class="textC">Mów po wygenerowaniu</label>
-      <input
-        type="checkbox"
-        id="isVoice"
-        name="isVoice"
-        onchange="isVoiceCon()"
-      />
-      <br />
-      <label for="rate" class="textC"
-        >Prędkość przemowy :
-        <input
-          type="number"
-          min="0.1"
-          max="10"
-          step="0.1"
-          id="rateVal"
-          class="textC"
-          onchange="rateConInp()"
-        />
-        <br />
-      </label>
-      <input
-        type="range"
-        id="rate"
-        name="rate"
-        min="1"
-        max="10"
-        step="0.1"
-        onchange="rateConRan()"
-      />
-
-      <br />
-      <label for="pitch" class="textC"
-        >Pitch : <br />
-        <input
-          type="number"
-          min="0"
-          max="2"
-          id="pitchVal"
-          value="1"
-          class="textC"
-          onchange="pitchConInp()"
-        />
-        <br />
-      </label>
-      <input
-        type="range"
-        id="pitch"
-        name="pitch"
-        value="1"
-        min="0"
-        max="2"
-        onchange="pitchConRan()"
-      />
-      <button class="ibut" id="inv" onclick="showInfo()">?</button>
-      <div class="info invisible" id="infoInv">
-        <p class="inspiration">
-          Strona zainspirowana
-          <a
-            href="https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html"
-            >tym postem</a
-          >
-          || Strona jest Open Source, i jest dostępna na
-          <a href="https://github.com/NotAllur/tts-korwin">Git Hub</a>
-        </p>
-        <p id="liczTekstow"></p>
+    <div class="modal" id="modal">
+      <div class="modalContent">
+        <span class="close" id="close">&times;</span>
+        <div class="optionContent">
+          <label for="isVoice" class="textC">Mów po wygenerowaniu</label>
+          <input type="checkbox" name="isVoice" id="isVoice" class="isVoice">
+          <br>
+          <label for="rate" class="textC">Prędość Przemowy : </label>
+          <input type="number" name="rate" id="rateVal" class="textC" min="0.1" max="10" step="0.1">
+          <br>
+          <label for="pitch" class="textC">Pitch : </label>
+          <input type="number" name="pitch" id="pitchVal" class="textC">
+          <br>
+          <p>Strona zainspirowana <a href="https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html">tym postem.</a></p>
+          <p>Strona jest Open Source na <a href="https://github.com/NotAllur/tts-korwin">github.com</a></p> <br>
+        </div>
       </div>
+      <button id="button-saveOption">Zapisz</button>
     </div>
+    <button class="button-OpenOptionModal" id="button-OpenOptionModal">Opcje</button>
     <!--JavaScript-->
     <script src="data.js"></script>
     <script src="tts.js"></script>

@@ -35,7 +35,10 @@ let data = {
       "Mówiąc wprost",
       "Tak - konstytucja ZSRR wyraźnie mówiła, że",
       "Jakiś nawiny rosjanin dziwi się, że",
-      "Jak to napisałem wiele razy (ale kto dziś czyta?) -"
+      "Jak to napisałem wiele razy (ale kto dziś czyta?) -",
+      "Komentarze: ",
+      "Myślcie jak POLITYCY, a nie jak małe DZIECI bojące sie niedźwiedzia -",
+      "Niedawno"
     ],
     "d": [
       //Cel obrażania
@@ -177,9 +180,9 @@ let data = {
       "bo chcą Prawa Człowieka na ich korzyść",
       "ponieważ natężenie mikkofobii na linijkę przekroczyło normy europejskie",
       "bo to są ciemniacy z dyplomami",
-      "bo oni twerdzą, za ś.tow.Józefem Goebbelsem, że parwdę można zrobić z każdego kłamstwa, byle je sto razy powtórzyć",
+      "bo oni twerdzą, za ś.tow.Józefem Goebbelsem, że prawdę można zrobić z każdego kłamstwa, byle je sto razy powtórzyć",
       "bo obawiają się, że mądrzejsi od nich mogą ich obalić",
-
+      "- a \"obywatele\" nie mają żadnej nadzieji",
     ],
     "s": [
       //zakończenie
@@ -229,7 +232,10 @@ let data = {
       "ale po tej wypowiedzi nie powinni pokazywać sie publicznie ze wstydu.",
       "#RządRżnieGłupa!",
       "ciekawe co obstawiają bookmacherzy.",
-      "Bądźmy w końcu wolni! Precz z socjalizmem!"
+      "Bądźmy w końcu wolni! Precz z socjalizmem!",
+      "czy feministki nadal chcą równych praw?",
+      "Ludzie: nauczcie sie dodawać 2 do 2.",
+      "póki nie zmienimy ustroju na normalny to nic sie nie poprawi"
     ]
 }
 
