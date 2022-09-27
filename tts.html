@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <!--Meta-->
-    <meta charset="UTF-8" />
+    <!--meta-->
     <meta
       name="description"
       content="Generator Tekstów korwina z możliwością Text To Speech"
     />
     <meta name="author" content="Allur & Deg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
       content="generator wypowiedzi korwina, korwin, korwin tts"
     />
-
-    <title>Generator wypowiedzeń Korwina</title>
-
-    <link rel="icon" href="img/korwin-icon.png" />
-    <!--Ikona karty (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--/meta-->
+    <!--resources-->
     <link href="css/tts.css" rel="stylesheet" />
+
+    <!--/resources-->
+    <!--title-->
+    <title>Generator wypowiedzeń Korwina</title>
+    <link rel="icon" href="img/korwin-icon.png" />
+    <!--/title-->
   </head>
-
-  <div class="copyAlert" id="copyAlert" >
-    Skopiowano tekst
-  </div>
-
+  <!--hidden-->
+  <div class="copyAlert" id="copyAlert">Skopiowano tekst</div>
+  <!--/hidden-->
+  <!--mainpanel-->
   <body onload="load()">
     <img src="img/korwin.png" class="responywnykorwin" id="responsywnykorwin" />
-    <!--Zdjęcie w tle (źródło: https://wiadomosci.wp.pl/janusz-korwin-mikke-znow-prowokuje-czas-podziwiac-rosje-6775100343605824a)-->
-
-    <div class="mfunbg">
-      <br />
-    </div>
-
     <div class="mainfun" id="mainfun">
-      <h1 class="titel">Generator wypowiedzeń Korwina</h1>
+      <h1 class="ttstitle">Generator wypowiedzeń Korwina</h1>
       <textarea
         onclick="copy()"
         class="reltext"
@@ -43,34 +39,53 @@
         placeholder="Tu pojawi się tekst."
         disabled
       ></textarea>
-      <button id="start" class="start" onclick="przemowa()">
-        Wygeneruj zdanie
-      </button>
-      <button onclick="copy()" class="copy">Skopiuj</button>
+      <div class="buttons">
+        <button id="start" class="start" onclick="przemowa()">Generuj</button>
+        <button onclick="copy()" class="copy">Skopiuj</button>
+        <button class="button-OpenOptionModal" id="button-OpenOptionModal">
+          Opcje
+        </button>
+      </div>
     </div>
-
+    <!--/mainpanel-->
+    <!--modal-->
     <div class="modal" id="modal">
       <div class="modalContent">
         <span class="close" id="close">&times;</span>
         <div class="optionContent">
           <label for="isVoice" class="textC">Mów po wygenerowaniu</label>
-          <input type="checkbox" name="isVoice" id="isVoice" class="isVoice">
-          <br>
+          <input type="checkbox" name="isVoice" id="isVoice" class="isVoice" />
+          <br />
           <label for="rate" class="textC">Prędość Przemowy : </label>
-          <input type="number" name="rate" id="rateVal" class="textC" min="0.1" max="10" step="0.1">
-          <br>
+          <input
+            type="number"
+            name="rate"
+            id="rateVal"
+            class="textC"
+            min="0.1"
+            max="10"
+            step="0.1"
+          />
+          <br />
           <label for="pitch" class="textC">Pitch : </label>
-          <input type="number" name="pitch" id="pitchVal" class="textC">
-          <br>
-          <p>Strona zainspirowana <a href="https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html">tym postem.</a></p>
-          <p>Strona jest Open Source na <a href="https://github.com/NotAllur/tts-korwin">github.com</a></p> <br>
+          <input type="number" name="pitch" id="pitchVal" class="textC" />
         </div>
+        <button id="button-saveOption">Zapisz</button>
       </div>
-      <button id="button-saveOption">Zapisz</button>
     </div>
-    <button class="button-OpenOptionModal" id="button-OpenOptionModal">Opcje</button>
+    <!--/modal-->
+    <footer>
+      Strona zainspirowana
+      <a
+        class="linki"
+        href="https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html"
+        >tym postem</a
+      >
+      - Repozytorium
+      <a class="linki" href="https://github.com/NotAllur/tts-korwin">GitHub</a>
+    </footer>
     <!--JavaScript-->
-    <script src="data.js"></script>
-    <script src="tts.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tts.js"></script>
   </body>
 </html>
