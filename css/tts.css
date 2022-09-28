@@ -249,6 +249,7 @@ Nowe : Modal
   }
   .ttstitle {
     font-size: 25px;
+    margin-top: 30px;
   }
   .buttons {
     position: absolute;
@@ -321,5 +322,16 @@ Nowe : Modal
     border-radius: 10px;
     text-align: center;
     padding: 10px;
+  }
+  #copyAlert {
+    position: absolute;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 2;
+    opacity: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
