@@ -3,24 +3,26 @@ speech.lang = "pl";
 let last;
 
 const bgImages = [
-  "./img/korwin.png",
-  "./img/korwin_mlot_TVP.jpg",
-  "./img/korwin_na_tronie_GOT.jpg",
-  "./img/korwin_nie_zyjesz_lewaku.jpg",
-  "./img/korwin_jumpscare.jpg",
-  "./img/korwin_eksplozja.jpg",
-  "./img/korwin_na_zlotym_tronie.jpg",
+  "../img/korwin.png",
+  "../img/korwin_mlot_TVP.jpg",
+  "../img/korwin_na_tronie_GOT.jpg",
+  "../img/korwin_nie_zyjesz_lewaku.jpg",
+  "../img/korwin_jumpscare.jpg",
+  "../img/korwin_eksplozja.jpg",
+  "../img/korwin_na_zlotym_tronie.jpg",
+  "../img/korwin_gdynia_z_cukrem.png",
+  "../img/korwin_przemawia_prawde.png",
+  "../img/korwin_got_bitches.png",
+  "../img/korwin_selfie.png"
 ];
 
 //  funkcja ładująca zmienne
 function load() {
   let korwin = data;
 
-  // document.getElementById("pitchVal").value = Number(window.localStorage.getItem("pitchValue")) || 1;
-  // document.getElementById("rate").value = Number(window.localStorage.getItem("pitchValue")) || 1;
-  // document.getElementById("rateVal").value = Number(window.localStorage.getItem("rateValue"))|| 1;
-  // document.getElementById("rate").value = Number(window.localStorage.getItem("rateValue")) || 1;
-  // document.getElementById("isVoice").checked = Number(window.localStorage.getItem("isVoice")) || true;
+  document.getElementById("pitchVal").value = Number(window.localStorage.getItem("pitchValue")) || 1;
+  document.getElementById("rateVal").value = Number(window.localStorage.getItem("rateValue"))|| 1;
+  document.getElementById("isVoice").checked = Number(window.localStorage.getItem("isVoice")) || true;
 
   console.log(
     `Łączna liczba możliwości: ${
@@ -83,6 +85,24 @@ async function copy() {
 let isVoice = document.getElementById("isVoice");
 let rate = document.getElementById("rateVal");
 let pitch = document.getElementById("pitchVal");
+
+isVoice.onchange = function(e){
+  window.localStorage.setItem('isVoice', document.getElementById('isVoice').value)
+}
+
+rate.onchange = function(e){
+  //min 0.1 - 10
+  if(Number(rate.value) > 10) rate.value = 10
+  if(Number(rate.value) < 0.1) rate.value = 0.1
+  window.localStorage.setItem('rateValue', rate.value)
+}
+
+pitch.onchange = function(e){
+  //min 0.1 max 2
+  if(Number(pitch.value) > 2) pitch.value = 2
+  if(Number(pitch.value) < 0.1) pitch.value = 0.1
+  window.localStorage.setItem('pitchValue', pitch.value)
+}
 
 document.getElementById("button-saveOption").onclick = function (e) {};
 

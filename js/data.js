@@ -26,6 +26,7 @@ let data = {
     "Ja chciałem państwu przypomnieć, że",
     "Niech państwo nie mają złudzeń:",
     "Powiedzmy to wyraźnie:",
+    "Tak jak pisałem:",
     "musimy jasno i stanowczo powiedzieć naszym kobietom, starcom i dzieciom:",
     "Dla wyjaśnienia moim wyborcom:",
     "Z największą przyjemnością stanę przed sądem, dlatego, że ktoś musi powiedzieć prawdę:",
@@ -39,10 +40,14 @@ let data = {
     "Komentarze: ",
     "Myślcie jak POLITYCY, a nie jak małe DZIECI bojące sie niedźwiedzia -",
     "Niedawno",
+    "Tak, oczywiście:",
+    "JE Jacek Sasin oznajmił",
+    "Skandal!"
   ],
   d: [
     //Cel obrażania
-    "Kobiety, które zawsze udają",
+    "Kobiety, które zawsze udają",,
+    "Faszyści z \"Nocnego Targu Towarzyskiego\"",
     "właściciele niewolników",
     "Związkowcy",
     "Trockliści",
@@ -78,6 +83,7 @@ let data = {
     "Anglo-sasowie",
     "kobiety",
     "ONZ",
+    "naiwni Rosjanie"
   ],
   t: [
     //co myśli o tej grupie
@@ -114,6 +120,8 @@ let data = {
     "za pieniądze arabskich emirów",
     "wychwalani przez obecny reżym",
     "zamiast rozwiązywania w zaciszu gabinetów prawdziwych problemów",
+    "to banda cyników, którzy dla zysku",
+    "- czyli z definicji: idioci -"
   ],
   c: [
     //co robią
@@ -128,6 +136,7 @@ let data = {
     "wydzielają buspassy",
     "podnoszą wiek emerytalny",
     "rżną głupa",
+    "nadal rżną głupa",
     "odbierają dzieci rodzicom",
     "wprowadzają absurdalne przepisy",
     "umieszczają dzieci w szkołach koedukacyjnych",
@@ -183,6 +192,10 @@ let data = {
     "bo oni twerdzą, za ś.tow.Józefem Goebbelsem, że prawdę można zrobić z każdego kłamstwa, byle je sto razy powtórzyć",
     "bo obawiają się, że mądrzejsi od nich mogą ich obalić",
     '- a "obywatele" nie mają żadnej nadzieji',
+    "- wyrządza to Polsce szkody",
+    "bo to wielka, bezczelna prowokacja",
+    "- więc teraz popierają Jarosława Kaczyńskiego",
+    "ponieważ CIA nie znalazła idiotów, którzy chcieliby z powodu brody rozwalić porządek społeczny w Iranie"
   ],
   s: [
     //zakończenie
@@ -236,11 +249,12 @@ let data = {
     "czy feministki nadal chcą równych praw?",
     "Ludzie: nauczcie sie dodawać 2 do 2.",
     "póki nie zmienimy ustroju na normalny to nic sie nie poprawi.",
+    "- sądy dawały za to lekkie wyroki z zawieszeniem...",
+    "Cóż: nie nasz cyrk, nie nasze banany - ale zabawne...",
+    "To straszne, że takie osoby zasiadają w Sejmie.",
+    "Czegoś tu jeszcze nie rozumiecie?",
+    "Nie możemy o tym zapominać!!!",
+    "- obawiam się, że znów nikt za to nie pójdzie siedzieć!",
+    "Natomiast reżymowa propaganda nie ma ŻADNYCH argumentów - a głosi, że to NA PEWNO robota Rosjan..."
   ],
 };
-
-/*
-Nie wiem gdzie te dodać : 
-- "wyrządza to Polsce szkody, bo polityk nie powinien kierować sie uczuciami, lecz racją stanu",
-- ""
-*/
