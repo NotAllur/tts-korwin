@@ -256,5 +256,6 @@ let data = {
     "Nie możemy o tym zapominać!!!",
     "- obawiam się, że znów nikt za to nie pójdzie siedzieć!",
     "Natomiast reżymowa propaganda nie ma ŻADNYCH argumentów - a głosi, że to NA PEWNO robota Rosjan..."
+    "a polityki nie uczono ich nigdy."
   ],
 };
