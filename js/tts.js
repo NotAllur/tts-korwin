@@ -2,6 +2,8 @@ let speech = new SpeechSynthesisUtterance();
 speech.lang = "pl";
 let last;
 
+let textTime = 30;
+
 const bgImages = [
   "../img/korwin.png",
   "../img/korwin_mlot_TVP.jpg",
@@ -44,7 +46,7 @@ function load() {
 }
 
 // funkcja generująca wypowiedź
-function przemowa() {
+async function przemowa() {
   let korwin = data;
 
   let text = [];
@@ -56,13 +58,32 @@ function przemowa() {
   text.push(korwin.s.random());
   let ttext = text.join(" ");
 
-  document.querySelector("textarea").value = `„${ttext}”`;
+  let textarea = document.querySelector("textarea");
+
+  dodajWdelay(ttext, textarea);
+
   speech.text = ttext;
   last = ttext;
 
   if (document.getElementById("isVoice").checked)
     window.speechSynthesis.speak(speech);
 }
+
+async function dodajWdelay(ttext, textarea) {
+  let simText = [];
+  for (let i in ttext) {
+    simText.push(ttext[i]);
+    textarea.value = simText.join("");
+    await sleep(textTime);
+  }
+}
+
+//generuj po kliknieciu przycisku
+
+document.addEventListener("keydown", function (e) {
+  let allowKeyDowns = ["Space"];
+  if (allowKeyDowns.includes(e.code)) przemowa();
+});
 
 //skopiowanie tekstu
 let opacity = 0;
