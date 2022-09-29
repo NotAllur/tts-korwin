@@ -13,16 +13,19 @@ const bgImages = [
   "../img/korwin_gdynia_z_cukrem.png",
   "../img/korwin_przemawia_prawde.png",
   "../img/korwin_got_bitches.png",
-  "../img/korwin_selfie.png"
+  "../img/korwin_selfie.png",
 ];
 
 //  funkcja ładująca zmienne
 function load() {
   let korwin = data;
 
-  document.getElementById("pitchVal").value = Number(window.localStorage.getItem("pitchValue")) || 1;
-  document.getElementById("rateVal").value = Number(window.localStorage.getItem("rateValue"))|| 1;
-  document.getElementById("isVoice").checked = Number(window.localStorage.getItem("isVoice")) || true;
+  document.getElementById("pitchVal").value =
+    Number(window.localStorage.getItem("pitchValue")) || 1;
+  document.getElementById("rateVal").value =
+    Number(window.localStorage.getItem("rateValue")) || 1;
+  document.getElementById("isVoice").checked =
+    Boolean(window.localStorage.getItem("isVoice")) || true;
 
   console.log(
     `Łączna liczba możliwości: ${
@@ -86,23 +89,26 @@ let isVoice = document.getElementById("isVoice");
 let rate = document.getElementById("rateVal");
 let pitch = document.getElementById("pitchVal");
 
-isVoice.onchange = function(e){
-  window.localStorage.setItem('isVoice', document.getElementById('isVoice').value)
-}
+isVoice.onchange = function (e) {
+  window.localStorage.setItem(
+    "isVoice",
+    document.getElementById("isVoice").value
+  );
+};
 
-rate.onchange = function(e){
+rate.onchange = function (e) {
   //min 0.1 - 10
-  if(Number(rate.value) > 10) rate.value = 10
-  if(Number(rate.value) < 0.1) rate.value = 0.1
-  window.localStorage.setItem('rateValue', rate.value)
-}
+  if (Number(rate.value) > 10) rate.value = 10;
+  if (Number(rate.value) < 0.1) rate.value = 0.1;
+  window.localStorage.setItem("rateValue", rate.value);
+};
 
-pitch.onchange = function(e){
+pitch.onchange = function (e) {
   //min 0.1 max 2
-  if(Number(pitch.value) > 2) pitch.value = 2
-  if(Number(pitch.value) < 0.1) pitch.value = 0.1
-  window.localStorage.setItem('pitchValue', pitch.value)
-}
+  if (Number(pitch.value) > 2) pitch.value = 2;
+  if (Number(pitch.value) < 0.1) pitch.value = 0.1;
+  window.localStorage.setItem("pitchValue", pitch.value);
+};
 
 document.getElementById("button-saveOption").onclick = function (e) {};
 
