@@ -42,12 +42,13 @@ let data = {
     "Niedawno",
     "Tak, oczywiście:",
     "JE Jacek Sasin oznajmił",
-    "Skandal!"
+    "Skandal!",
   ],
   d: [
     //Cel obrażania
-    "Kobiety, które zawsze udają",,
-    "Faszyści z \"Nocnego Targu Towarzyskiego\"",
+    "Kobiety, które zawsze udają",
+    ,
+    'Faszyści z "Nocnego Targu Towarzyskiego"',
     "właściciele niewolników",
     "Związkowcy",
     "Trockliści",
@@ -83,7 +84,7 @@ let data = {
     "Anglo-sasowie",
     "kobiety",
     "ONZ",
-    "naiwni Rosjanie"
+    "naiwni Rosjanie",
   ],
   t: [
     //co myśli o tej grupie
@@ -121,7 +122,7 @@ let data = {
     "wychwalani przez obecny reżym",
     "zamiast rozwiązywania w zaciszu gabinetów prawdziwych problemów",
     "to banda cyników, którzy dla zysku",
-    "- czyli z definicji: idioci -"
+    "- czyli z definicji: idioci -",
   ],
   c: [
     //co robią
@@ -195,7 +196,7 @@ let data = {
     "- wyrządza to Polsce szkody",
     "bo to wielka, bezczelna prowokacja",
     "- więc teraz popierają Jarosława Kaczyńskiego",
-    "ponieważ CIA nie znalazła idiotów, którzy chcieliby z powodu brody rozwalić porządek społeczny w Iranie"
+    "ponieważ CIA nie znalazła idiotów, którzy chcieliby z powodu brody rozwalić porządek społeczny w Iranie",
   ],
   s: [
     //zakończenie
@@ -255,7 +256,7 @@ let data = {
     "Czegoś tu jeszcze nie rozumiecie?",
     "Nie możemy o tym zapominać!!!",
     "- obawiam się, że znów nikt za to nie pójdzie siedzieć!",
-    "Natomiast reżymowa propaganda nie ma ŻADNYCH argumentów - a głosi, że to NA PEWNO robota Rosjan..."
-    "a polityki nie uczono ich nigdy."
+    "Natomiast reżymowa propaganda nie ma ŻADNYCH argumentów - a głosi, że to NA PEWNO robota Rosjan...",
+    "a polityki nie uczono ich nigdy.",
   ],
 };
