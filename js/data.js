@@ -43,12 +43,14 @@ let data = {
     "Tak, oczywiście:",
     "JE Jacek Sasin oznajmił",
     "Skandal!",
+    "Z tajemniczych powodów",
+    "Totalna żenada",
+    "To wszystko jest trochę śmieszne,"
   ],
   d: [
     //Cel obrażania
-    "Kobiety, które zawsze udają",
-    ,
-    'Faszyści z "Nocnego Targu Towarzyskiego"',
+    "Kobiety, które zawsze udają",,
+    "Faszyści z \"Nocnego Targu Towarzyskiego\"",
     "właściciele niewolników",
     "Związkowcy",
     "Trockliści",
@@ -84,7 +86,7 @@ let data = {
     "Anglo-sasowie",
     "kobiety",
     "ONZ",
-    "naiwni Rosjanie",
+    "naiwni Rosjanie"
   ],
   t: [
     //co myśli o tej grupie
@@ -123,6 +125,8 @@ let data = {
     "zamiast rozwiązywania w zaciszu gabinetów prawdziwych problemów",
     "to banda cyników, którzy dla zysku",
     "- czyli z definicji: idioci -",
+    "opłacani przez agentów mossadu",
+    "którzy nie są już ludzmi, a bydłem"
   ],
   c: [
     //co robią
@@ -158,6 +162,7 @@ let data = {
     "kradli, ale i pozwalają kraść",
     "dobierają sobie Biernych, Miernych ale Wiernych",
     "znakomicie potrafią grać na uczuciach L**u robiąc mądre miny i umiejętnie wykorzystując zestawy słów, które nic nie znaczą",
+    "usiłują nam wytłumaczyć, że herbata staje sie słodka nie od słodzenia, tylko od mieszania"
   ],
   i: [
     //dlaczego to robią
@@ -196,7 +201,7 @@ let data = {
     "- wyrządza to Polsce szkody",
     "bo to wielka, bezczelna prowokacja",
     "- więc teraz popierają Jarosława Kaczyńskiego",
-    "ponieważ CIA nie znalazła idiotów, którzy chcieliby z powodu brody rozwalić porządek społeczny w Iranie",
+    "ponieważ CIA nie znalazła idiotów, którzy chcieliby z powodu brody rozwalić porządek społeczny w Iranie"
   ],
   s: [
     //zakończenie
@@ -257,6 +262,7 @@ let data = {
     "Nie możemy o tym zapominać!!!",
     "- obawiam się, że znów nikt za to nie pójdzie siedzieć!",
     "Natomiast reżymowa propaganda nie ma ŻADNYCH argumentów - a głosi, że to NA PEWNO robota Rosjan...",
-    "a polityki nie uczono ich nigdy.",
+    "Obawiam sie najgorszego...",
+    "Jest to pragnienie zademonstrowania swojej władzy nad bliźnimi",
   ],
 };

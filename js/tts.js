@@ -5,17 +5,17 @@ let last;
 let textTime = 30;
 
 const bgImages = [
-  "../img/korwin.png",
-  "../img/korwin_mlot_TVP.jpg",
-  "../img/korwin_na_tronie_GOT.jpg",
-  "../img/korwin_nie_zyjesz_lewaku.jpg",
-  "../img/korwin_jumpscare.jpg",
-  "../img/korwin_eksplozja.jpg",
-  "../img/korwin_na_zlotym_tronie.jpg",
-  "../img/korwin_gdynia_z_cukrem.png",
-  "../img/korwin_przemawia_prawde.png",
-  "../img/korwin_got_bitches.png",
-  "../img/korwin_selfie.png",
+  "./img/korwin.png",
+  "./img/korwin_mlot_TVP.jpg",
+  "./img/korwin_na_tronie_GOT.jpg",
+  "./img/korwin_nie_zyjesz_lewaku.jpg",
+  "./img/korwin_jumpscare.jpg",
+  "./img/korwin_eksplozja.jpg",
+  "./img/korwin_na_zlotym_tronie.jpg",
+  "./img/korwin_gdynia_z_cukrem.png",
+  "./img/korwin_przemawia_prawde.png",
+  "./img/korwin_got_bitches.png",
+  "./img/korwin_selfie.png",
 ];
 
 //  funkcja ładująca zmienne
@@ -130,8 +130,6 @@ pitch.onchange = function (e) {
   if (Number(pitch.value) < 0.1) pitch.value = 0.1;
   window.localStorage.setItem("pitchValue", pitch.value);
 };
-
-document.getElementById("button-saveOption").onclick = function (e) {};
 
 //kontrola modułu opcji
 
