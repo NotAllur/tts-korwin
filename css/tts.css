@@ -18,7 +18,7 @@ body {
 
 .mainfun {
   background-color: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
   position: absolute;
   top: 43%;
   left: 50%;
@@ -190,6 +190,7 @@ input[type="range"]:focus::-ms-fill-upper {
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(7px);
 }
 
 /*
@@ -207,6 +208,7 @@ Nowe : Modal
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(7px);
 }
 .modalContent {
   /*Div w div.modal*/
@@ -216,6 +218,7 @@ Nowe : Modal
   border: none;
   border-radius: 10px;
   width: 40%;
+  backdrop-filter: blur(7px);
 }
 
 .close {
