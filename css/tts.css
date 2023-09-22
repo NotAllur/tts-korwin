@@ -18,6 +18,7 @@ body {
 
 .mainfun {
   background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur;
   position: absolute;
   top: 43%;
   left: 50%;
