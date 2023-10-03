@@ -5,17 +5,17 @@ let last;
 let textTime = 30;
 
 const bgImages = [
-  "./img/korwin.png",
-  "./img/korwin_mlot_TVP.jpg",
-  "./img/korwin_na_tronie_GOT.jpg",
-  "./img/korwin_nie_zyjesz_lewaku.jpg",
-  "./img/korwin_jumpscare.jpg",
-  "./img/korwin_eksplozja.jpg",
-  "./img/korwin_na_zlotym_tronie.jpg",
-  "./img/korwin_gdynia_z_cukrem.png",
-  "./img/korwin_przemawia_prawde.png",
-  "./img/korwin_got_bitches.png",
-  "./img/korwin_selfie.png",
+  "./img/korwin.webp",
+  "./img/korwin_mlot_TVP.webp",
+  "./img/korwin_na_tronie_GOT.webp",
+  "./img/korwin_nie_zyjesz_lewaku.webp",
+  "./img/korwin_jumpscare.webp",
+  "./img/korwin_eksplozja.webp",
+  "./img/korwin_na_zlotym_tronie.webp",
+  "./img/korwin_gdynia_z_cukrem.webp",
+  "./img/korwin_przemawia_prawde.webp",
+  "./img/korwin_got_bitches.webp",
+  "./img/korwin_selfie.webp",
 ];
 
 //  funkcja ładująca zmienne
