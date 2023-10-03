@@ -20,7 +20,7 @@
     <!--/resources-->
     <!--title-->
     <title>Generator wypowiedzeń Korwina</title>
-    <link rel="icon" href="img/korwin-icon.png" />
+    <link rel="icon" href="img/korwin-icon.webp" />
     <!--/title-->
   </head>
   <!--hidden-->
@@ -28,7 +28,11 @@
   <!--/hidden-->
   <!--mainpanel-->
   <body onload="load()">
-    <img src="img/korwin.png" class="responywnykorwin" id="responsywnykorwin" />
+    <img
+      src="img/korwin.webp"
+      class="responywnykorwin"
+      id="responsywnykorwin"
+    />
     <div class="mainfun" id="mainfun">
       <h1 class="ttstitle">Generator wypowiedzeń Korwina</h1>
       <textarea
@@ -46,6 +50,9 @@
           Opcje
         </button>
       </div>
+      <!--hidden-->
+      <div class="ttsError" id="ttsError">Wystąpił błąd z tekstem na mowę.</div>
+      <!--/hidden-->
     </div>
     <!--/mainpanel-->
     <!--modal-->
