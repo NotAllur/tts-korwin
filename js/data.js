@@ -1,9 +1,13 @@
 // Źródło: https://kwejk.pl/obrazek/3454065/wypowiedzi-korwina-generator20.html
 //„”
 //teksty
-let data = {
+let korwin = {
   p: [
     // Zwrócenie uwagi odbiorcy do siebie
+    "Przechodzę w tryb wyborczy -",
+    "Mam dość tej głupiej gadaniny -", 
+    "Zabawne:",
+    "Lewica każe Wam kierować się sercem ❣️ A ja powiadam:",
     "Prosze zwrócić uwage, że",
     "I tak mam trzy razy mniej czasu, więc prosze mi pozwolić powiedzieć",
     "Państwo sie śmieją, ale",
@@ -45,7 +49,12 @@ let data = {
     "Skandal!",
     "Z tajemniczych powodów",
     "Totalna żenada",
-    "To wszystko jest trochę śmieszne,"
+    "To wszystko jest trochę śmieszne,",
+    "Nie śmiać się, bo to wcale nie jest oczywiste!",
+    "Powtarzam po raz setny:",
+    "Przypominam, że",
+    "Jakby ktoś nie słyszał,"
+
   ],
   d: [
     //Cel obrażania
@@ -86,7 +95,11 @@ let data = {
     "Anglo-sasowie",
     "kobiety",
     "ONZ",
-    "naiwni Rosjanie"
+    "lewacy",
+    "naiwni Rosjanie",
+    "macherzy PO",
+    "neokomuniści",
+    "3 mln Ukraińców",
   ],
   t: [
     //co myśli o tej grupie
@@ -130,7 +143,9 @@ let data = {
   ],
   c: [
     //co robią
+    "Twierdzą, że w homo-związkach rodzi sie więcej dziecim niż w związkach normalnych",
     "udają homoseksualistów",
+    "chcą ośmieszyć i zniszczyć do reszty instytucję małżeństwa",
     "niszczą rodzinę",
     "idą do polityki",
     "zakazują góralom robienia oscypków",
@@ -162,7 +177,10 @@ let data = {
     "kradli, ale i pozwalają kraść",
     "dobierają sobie Biernych, Miernych ale Wiernych",
     "znakomicie potrafią grać na uczuciach L**u robiąc mądre miny i umiejętnie wykorzystując zestawy słów, które nic nie znaczą",
-    "usiłują nam wytłumaczyć, że herbata staje sie słodka nie od słodzenia, tylko od mieszania"
+    "usiłują nam wytłumaczyć, że herbata staje sie słodka nie od słodzenia, tylko od mieszania",
+    "atakują razem PiS",
+    "traktują emeryturę jak... świadczenie socjalne",
+    "próbują pozbawić nas prywatnych samochodów i domów"
   ],
   i: [
     //dlaczego to robią
@@ -187,6 +205,7 @@ let data = {
     "bo głupich jest więcej niż mądrych",
     "bo chcą stworzyć raj na ziemii",
     "bo chcą zniszczyć cywilizacje białego człowieka",
+    "czyli do momentu kiedy nie oddaliśmy im całej broni oraz dopóki nie naruszyliśmy ich interesów.",
     "bo takie jest prawo czarnego rynku",
     "bo nie widzą świata takim jaki jest,tylko takim jakim im go pokażą",
     "bo na tym polega liberalizm.",
@@ -246,7 +265,7 @@ let data = {
     "ale sanatorzy wyznawali Teorię dwóch wrogów.",
     "- to wszystko jest teatr stworzony przy okrągłym stole.",
     "- przed czym chcecie ludzi zniechęcić, utrzymując dalej podatek dochodowy?",
-    "tę włąśnie praktykę zwalczam.",
+    "tę właśnie praktykę zwalczam.",
     "ale dzisiejsza dzicz nie uznaje zasad europejskich zasad moralnych.",
     "ale po tej wypowiedzi nie powinni pokazywać sie publicznie ze wstydu.",
     "#RządRżnieGłupa!",
@@ -261,8 +280,10 @@ let data = {
     "Czegoś tu jeszcze nie rozumiecie?",
     "Nie możemy o tym zapominać!!!",
     "- obawiam się, że znów nikt za to nie pójdzie siedzieć!",
-    "Natomiast reżymowa propaganda nie ma ŻADNYCH argumentów - a głosi, że to NA PEWNO robota Rosjan...",
-    "Obawiam sie najgorszego...",
-    "Jest to pragnienie zademonstrowania swojej władzy nad bliźnimi",
+    "Natomiast reżymowa propaganda nie ma ŻADNYCH argumentów",
+    "Co tu dziwować? To jeszcze nie jest najgłupszy z ich wyczynów...",
+    "jedynym wrogiem tych cwaniaków jest KONFEDERACJA - bo my naprawdę chcemy zniszczyć socjalizm!",
+    "Teraz czekamy na zdecydowaną reakcję Brukseli.",
+    "o co muszą dbać niezawiśli sędziowie, a nie urzędnicy państwowi!",
   ],
 };
